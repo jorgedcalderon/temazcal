@@ -7,7 +7,19 @@ app.use(express.static(__dirname + "/public"));
 
 
 app.get("/", function(req, res){
-    res.render("landing");
+    res.render("index");
+});
+
+app.get("/en", function(req, res){
+    res.render("landing-en");
+});
+
+app.get("/es", function(req, res){
+    res.render("landing-es");
+});
+
+app.get("*", function(req, res){
+    res.render("/");
 });
 
 app.listen(process.env.PORT, process.env.IP, function(){

@@ -9,6 +9,7 @@
 html {
 	font: normal 16px sans-serif;
 	color: #555;
+	text-align: justify;
 }
 
 ul, nav {
@@ -289,6 +290,11 @@ header nav li {
 	flex: 1;
 }
 
+.contact a {
+	color: #474747;
+	font: bold 20px "Open Sans", sans-serif;
+}
+
 @media (max-width: 1000px) {
 	.contact form input {
 		flex-basis: 100%;
@@ -335,3 +341,4 @@ footer p {
 		margin: 0 8px;
 	}
 }
+
