@@ -22,6 +22,6 @@ app.get("*", function(req, res){
     res.render("/");
 });
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(8080, "localhost", function(){
     console.log("Servidor de temazcal inicado corriendo en puerto: " + process.env.PORT + "con IP: " + process.env.IP);
 });
