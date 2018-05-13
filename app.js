@@ -1,5 +1,7 @@
 var express = require("express");
 var app = express();
+var port = process.env.PORT || "8080";
+var ip = process.env.IP || "159.203.13.74";
 
 
 app.set("view engine", "ejs");
@@ -22,6 +24,6 @@ app.get("*", function(req, res){
     res.render("/");
 });
 
-app.listen(8080, '159.203.13.74', function(){
+app.listen(port, ip, function(){
     console.log("Servidor de temazcal inicado corriendo en puerto");
 });
