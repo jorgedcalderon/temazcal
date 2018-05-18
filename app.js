@@ -29,7 +29,7 @@ app.get("/pago_en_proceso", function(req, res){
 });
 
 app.get("*", function(req, res){
-    res.render("/");
+    res.render("index");
 });
 
 app.listen(port, ip, function(){
