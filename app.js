@@ -20,10 +20,18 @@ app.get("/es", function(req, res){
     res.render("landing-es");
 });
 
+app.get("/pago_exitoso", function(req, res){
+    res.render("pago-exitoso");
+});
+
+app.get("/pago_en_proceso", function(req, res){
+    res.render("pago-en-proceso");
+});
+
 app.get("*", function(req, res){
     res.render("/");
 });
 
 app.listen(port, ip, function(){
-    console.log("Servidor de temazcal inicado corriendo en puerto");
+    console.log("Servidor de temazcal inicado");
 });
