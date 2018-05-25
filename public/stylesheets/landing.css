@@ -286,10 +286,12 @@ header nav li {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 60%;
+	margin-bottom: 20px;
 }
 
 .contact form .btn {
-	padding: 18px 42px;
+	padding: 16px 42px;
+	margin-top: 10px;
 }
 
 .contact form input {
