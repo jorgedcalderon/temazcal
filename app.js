@@ -3,9 +3,11 @@ var app = express();
 var bodyParser = require("body-parser");
 var port = process.env.PORT || "8080";
 var ip = process.env.IP || "159.203.13.74";
+var data = require("./data");
+console.log(data);
 
-var api_key = 'key-b48534b7a46ccbceda643ad01b41f1a9';
-var domain = 'mail.temazcal.info';
+var api_key = data.mailKey;
+var domain =  data.mailUser;
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 app.set("view engine", "ejs");
